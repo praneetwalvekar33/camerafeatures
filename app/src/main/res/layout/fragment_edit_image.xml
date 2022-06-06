@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditImageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EditImageActivity">
+
+        <ImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/crop_image_view"
+            android:layout_height="500dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/undo_button_select_image"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Undo Image"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/rotate_button_select_image"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Rotate Right"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/crop_image_view"
+            android:backgroundTint="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/crop_button_select_image"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Crop Image"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rotate_button_select_image"
+            android:backgroundTint="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/save_button_select_image"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Save Image"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</FrameLayout>
